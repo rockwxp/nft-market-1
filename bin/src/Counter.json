@@ -38,8 +38,8 @@
     "metadata": "{\"compiler\":{\"version\":\"0.8.26+commit.8a97fa7a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"increment\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"number\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"newNumber\",\"type\":\"uint256\"}],\"name\":\"setNumber\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/rock/git/foundry-project/nft-market-1/src/Counter.sol\":\"Counter\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/rock/git/foundry-project/nft-market-1/src/Counter.sol\":{\"keccak256\":\"0x09277f949d59a9521708c870dc39c2c434ad8f86a5472efda6a732ef728c0053\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://94cd5258357da018bf911aeda60ed9f5b130dce27445669ee200313cd3389200\",\"dweb:/ipfs/QmNbEfWAqXCtfQpk6u7TpGa8sTHXFLpUz7uebz2FVbchSC\"]}},\"version\":1}",
     "bytecode": "6080604052348015600e575f80fd5b5060ec8061001b5f395ff3fe6080604052348015600e575f80fd5b5060043610603a575f3560e01c80633fb5c1cb14603e5780638381f58a14604f578063d09de08a146068575b5f80fd5b604d6049366004607d565b5f55565b005b60565f5481565b60405190815260200160405180910390f35b604d5f805490806076836093565b9190505550565b5f60208284031215608c575f80fd5b5035919050565b5f6001820160af57634e487b7160e01b5f52601160045260245ffd5b506001019056fea2646970667358221220e809372570678586f8ee2e17e429cf74d317c9d1ed649aecdef8106a817f6a7e64736f6c634300081a0033",
     "deployedBytecode": "6080604052348015600e575f80fd5b5060043610603a575f3560e01c80633fb5c1cb14603e5780638381f58a14604f578063d09de08a146068575b5f80fd5b604d6049366004607d565b5f55565b005b60565f5481565b60405190815260200160405180910390f35b604d5f805490806076836093565b9190505550565b5f60208284031215608c575f80fd5b5035919050565b5f6001820160af57634e487b7160e01b5f52601160045260245ffd5b506001019056fea2646970667358221220e809372570678586f8ee2e17e429cf74d317c9d1ed649aecdef8106a817f6a7e64736f6c634300081a0033",
-    "sourceMap": "65:192:18:-:0;;;;;;;;;;;;;;;;;;;",
-    "deployedSourceMap": "65:192:18:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;116:80;;;;;;:::i;:::-;171:6;:18;116:80;;;88:21;;;;;;;;;345:25:20;;;333:2;318:18;88:21:18;;;;;;;202:53;;240:6;:8;;;:6;:8;;;:::i;:::-;;;;;;202:53::o;14:180:20:-;73:6;126:2;114:9;105:7;101:23;97:32;94:52;;;142:1;139;132:12;94:52;-1:-1:-1;165:23:20;;14:180;-1:-1:-1;14:180:20:o;381:232::-;420:3;441:17;;;438:140;;500:10;495:3;491:20;488:1;481:31;535:4;532:1;525:15;563:4;560:1;553:15;438:140;-1:-1:-1;605:1:20;594:13;;381:232::o",
+    "sourceMap": "65:192:45:-:0;;;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "65:192:45:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;116:80;;;;;;:::i;:::-;171:6;:18;116:80;;;88:21;;;;;;;;;345:25:50;;;333:2;318:18;88:21:45;;;;;;;202:53;;240:6;:8;;;:6;:8;;;:::i;:::-;;;;;;202:53::o;14:180:50:-;73:6;126:2;114:9;105:7;101:23;97:32;94:52;;;142:1;139;132:12;94:52;-1:-1:-1;165:23:50;;14:180;-1:-1:-1;14:180:50:o;381:232::-;420:3;441:17;;;438:140;;500:10;495:3;491:20;488:1;481:31;535:4;532:1;525:15;563:4;560:1;553:15;438:140;-1:-1:-1;605:1:50;594:13;;381:232::o",
     "sourcePath": "/Users/rock/git/foundry-project/nft-market-1/src/Counter.sol",
     "compiler": {
         "name": "solc",
@@ -49,15 +49,15 @@
         "absolutePath": "/Users/rock/git/foundry-project/nft-market-1/src/Counter.sol",
         "exportedSymbols": {
             "Counter": [
-                3628
+                43091
             ]
         },
-        "id": 3629,
+        "id": 43092,
         "license": "UNLICENSED",
         "nodeType": "SourceUnit",
         "nodes": [
             {
-                "id": 3608,
+                "id": 43071,
                 "literals": [
                     "solidity",
                     "^",
@@ -65,7 +65,7 @@
                     ".13"
                 ],
                 "nodeType": "PragmaDirective",
-                "src": "39:24:18"
+                "src": "39:24:45"
             },
             {
                 "abstract": false,
@@ -74,24 +74,24 @@
                 "contractDependencies": [],
                 "contractKind": "contract",
                 "fullyImplemented": true,
-                "id": 3628,
+                "id": 43091,
                 "linearizedBaseContracts": [
-                    3628
+                    43091
                 ],
                 "name": "Counter",
-                "nameLocation": "74:7:18",
+                "nameLocation": "74:7:45",
                 "nodeType": "ContractDefinition",
                 "nodes": [
                     {
                         "constant": false,
                         "functionSelector": "8381f58a",
-                        "id": 3610,
+                        "id": 43073,
                         "mutability": "mutable",
                         "name": "number",
-                        "nameLocation": "103:6:18",
+                        "nameLocation": "103:6:45",
                         "nodeType": "VariableDeclaration",
-                        "scope": 3628,
-                        "src": "88:21:18",
+                        "scope": 43091,
+                        "src": "88:21:45",
                         "stateVariable": true,
                         "storageLocation": "default",
                         "typeDescriptions": {
@@ -99,10 +99,10 @@
                             "typeString": "uint256"
                         },
                         "typeName": {
-                            "id": 3609,
+                            "id": 43072,
                             "name": "uint256",
                             "nodeType": "ElementaryTypeName",
-                            "src": "88:7:18",
+                            "src": "88:7:45",
                             "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
                                 "typeString": "uint256"
@@ -112,24 +112,24 @@
                     },
                     {
                         "body": {
-                            "id": 3619,
+                            "id": 43082,
                             "nodeType": "Block",
-                            "src": "161:35:18",
+                            "src": "161:35:45",
                             "statements": [
                                 {
                                     "expression": {
-                                        "id": 3617,
+                                        "id": 43080,
                                         "isConstant": false,
                                         "isLValue": false,
                                         "isPure": false,
                                         "lValueRequested": false,
                                         "leftHandSide": {
-                                            "id": 3615,
+                                            "id": 43078,
                                             "name": "number",
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [],
-                                            "referencedDeclaration": 3610,
-                                            "src": "171:6:18",
+                                            "referencedDeclaration": 43073,
+                                            "src": "171:6:45",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_uint256",
                                                 "typeString": "uint256"
@@ -138,50 +138,50 @@
                                         "nodeType": "Assignment",
                                         "operator": "=",
                                         "rightHandSide": {
-                                            "id": 3616,
+                                            "id": 43079,
                                             "name": "newNumber",
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [],
-                                            "referencedDeclaration": 3612,
-                                            "src": "180:9:18",
+                                            "referencedDeclaration": 43075,
+                                            "src": "180:9:45",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_uint256",
                                                 "typeString": "uint256"
                                             }
                                         },
-                                        "src": "171:18:18",
+                                        "src": "171:18:45",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_uint256",
                                             "typeString": "uint256"
                                         }
                                     },
-                                    "id": 3618,
+                                    "id": 43081,
                                     "nodeType": "ExpressionStatement",
-                                    "src": "171:18:18"
+                                    "src": "171:18:45"
                                 }
                             ]
                         },
                         "functionSelector": "3fb5c1cb",
-                        "id": 3620,
+                        "id": 43083,
                         "implemented": true,
                         "kind": "function",
                         "modifiers": [],
                         "name": "setNumber",
-                        "nameLocation": "125:9:18",
+                        "nameLocation": "125:9:45",
                         "nodeType": "FunctionDefinition",
                         "parameters": {
-                            "id": 3613,
+                            "id": 43076,
                             "nodeType": "ParameterList",
                             "parameters": [
                                 {
                                     "constant": false,
-                                    "id": 3612,
+                                    "id": 43075,
                                     "mutability": "mutable",
                                     "name": "newNumber",
-                                    "nameLocation": "143:9:18",
+                                    "nameLocation": "143:9:45",
                                     "nodeType": "VariableDeclaration",
-                                    "scope": 3620,
-                                    "src": "135:17:18",
+                                    "scope": 43083,
+                                    "src": "135:17:45",
                                     "stateVariable": false,
                                     "storageLocation": "default",
                                     "typeDescriptions": {
@@ -189,10 +189,10 @@
                                         "typeString": "uint256"
                                     },
                                     "typeName": {
-                                        "id": 3611,
+                                        "id": 43074,
                                         "name": "uint256",
                                         "nodeType": "ElementaryTypeName",
-                                        "src": "135:7:18",
+                                        "src": "135:7:45",
                                         "typeDescriptions": {
                                             "typeIdentifier": "t_uint256",
                                             "typeString": "uint256"
@@ -201,29 +201,29 @@
                                     "visibility": "internal"
                                 }
                             ],
-                            "src": "134:19:18"
+                            "src": "134:19:45"
                         },
                         "returnParameters": {
-                            "id": 3614,
+                            "id": 43077,
                             "nodeType": "ParameterList",
                             "parameters": [],
-                            "src": "161:0:18"
+                            "src": "161:0:45"
                         },
-                        "scope": 3628,
-                        "src": "116:80:18",
+                        "scope": 43091,
+                        "src": "116:80:45",
                         "stateMutability": "nonpayable",
                         "virtual": false,
                         "visibility": "public"
                     },
                     {
                         "body": {
-                            "id": 3626,
+                            "id": 43089,
                             "nodeType": "Block",
-                            "src": "230:25:18",
+                            "src": "230:25:45",
                             "statements": [
                                 {
                                     "expression": {
-                                        "id": 3624,
+                                        "id": 43087,
                                         "isConstant": false,
                                         "isLValue": false,
                                         "isPure": false,
@@ -231,14 +231,14 @@
                                         "nodeType": "UnaryOperation",
                                         "operator": "++",
                                         "prefix": false,
-                                        "src": "240:8:18",
+                                        "src": "240:8:45",
                                         "subExpression": {
-                                            "id": 3623,
+                                            "id": 43086,
                                             "name": "number",
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [],
-                                            "referencedDeclaration": 3610,
-                                            "src": "240:6:18",
+                                            "referencedDeclaration": 43073,
+                                            "src": "240:6:45",
                                             "typeDescriptions": {
                                                 "typeIdentifier": "t_uint256",
                                                 "typeString": "uint256"
@@ -249,46 +249,46 @@
                                             "typeString": "uint256"
                                         }
                                     },
-                                    "id": 3625,
+                                    "id": 43088,
                                     "nodeType": "ExpressionStatement",
-                                    "src": "240:8:18"
+                                    "src": "240:8:45"
                                 }
                             ]
                         },
                         "functionSelector": "d09de08a",
-                        "id": 3627,
+                        "id": 43090,
                         "implemented": true,
                         "kind": "function",
                         "modifiers": [],
                         "name": "increment",
-                        "nameLocation": "211:9:18",
+                        "nameLocation": "211:9:45",
                         "nodeType": "FunctionDefinition",
                         "parameters": {
-                            "id": 3621,
+                            "id": 43084,
                             "nodeType": "ParameterList",
                             "parameters": [],
-                            "src": "220:2:18"
+                            "src": "220:2:45"
                         },
                         "returnParameters": {
-                            "id": 3622,
+                            "id": 43085,
                             "nodeType": "ParameterList",
                             "parameters": [],
-                            "src": "230:0:18"
+                            "src": "230:0:45"
                         },
-                        "scope": 3628,
-                        "src": "202:53:18",
+                        "scope": 43091,
+                        "src": "202:53:45",
                         "stateMutability": "nonpayable",
                         "virtual": false,
                         "visibility": "public"
                     }
                 ],
-                "scope": 3629,
-                "src": "65:192:18",
+                "scope": 43092,
+                "src": "65:192:45",
                 "usedErrors": [],
                 "usedEvents": []
             }
         ],
-        "src": "39:219:18"
+        "src": "39:219:45"
     },
     "functionHashes": {
         "increment()": "d09de08a",
