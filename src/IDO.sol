@@ -70,10 +70,16 @@ contract IDO {
         _;
     }
 
+    //only for admin use
+    modifier OnlyAdmin() {
+        require(msg.sender == admin, "only for admin");
+        _;
+    }
+
     /**
         presale
      */
-    function presale() external payable OnlyActive {
+    function presale() public payable OnlyActive {
         uint256 amount = balances[msg.sender].amount + msg.value;
         totlePresaleETH += msg.value;
         require(
@@ -100,10 +106,14 @@ contract IDO {
     }
 
     /**
-        admin get eth of 10% 
+        admin get eth 
      */
-    function withdra() external OnlySuccess {
-        payable(admin).transfer(address(this).balance / 10);
+    function withdraw() external OnlySuccess OnlyAdmin {
+        (bool success, ) = payable(admin).call{value: address(this).balance}(
+            ""
+        );
+        require(success, "withdraw failed");
+        //payable(address(admin)).transfer(address(this).balance);
     }
 
     /**
@@ -117,7 +127,15 @@ contract IDO {
     function setTotlePresaleETH(uint256 amount) public {
         totlePresaleETH = amount;
     }
-    function isSuccess() public returns (bool) {
-        if (block.timestamp > endTime && totlePresaleETH >= minTargetFuns) {}
+    function isSuccess() public view returns (bool) {
+        if (block.timestamp > endTime && totlePresaleETH >= minTargetFuns) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    receive() external payable {
+        presale();
     }
 }

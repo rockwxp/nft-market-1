@@ -81,4 +81,20 @@ contract IDOTest is Test {
         );
         vm.stopPrank();
     }
+
+    function test_withdraw() public {
+        vm.startPrank(admin);
+
+        //make ido to be success
+        vm.deal(address(ido), 200 ether);
+        ido.setTotlePresaleETH(200 * 1e18);
+        vm.warp(block.timestamp + 25 hours);
+
+        console.log("admin balance before withdraw:", address(admin).balance);
+        ido.withdraw();
+        console.log("admin balance after withdraw:", address(admin).balance);
+        assertEq(admin.balance, 200 ether);
+
+        vm.stopPrank();
+    }
 }
