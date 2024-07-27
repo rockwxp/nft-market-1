@@ -46,13 +46,13 @@ contract IDOTest is Test {
         vm.startPrank(user_1);
         console.log("user_1 balance:", address(user_1).balance);
         //buy token
-        ido.presale{value: 1 ether}();
+        ido.presale{value: 0.05 ether}();
         console.log("ido contract balance:", address(ido).balance);
         console.log("user_1 balance:", address(user_1).balance);
         (uint256 amount, ) = ido.balances(user_1);
         console.log("user_1 ido eth balance", amount);
 
-        assertEq(address(ido).balance, 0.02 * 1e18, "ido contract is wrong");
+        assertEq(address(ido).balance, 0.05 * 1e18, "ido contract is wrong");
         vm.stopPrank();
     }
 
